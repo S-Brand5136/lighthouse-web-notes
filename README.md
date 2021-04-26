@@ -1,1 +1,1 @@
-# [Brandon Shemilt]'s Notes
+# Brandon Shemilt's Notes
