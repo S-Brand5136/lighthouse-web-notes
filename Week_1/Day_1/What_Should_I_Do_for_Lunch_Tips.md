@@ -12,3 +12,26 @@ function whatToDoForLunch(hungry, availableTime) {
   console.log("availableTime is", availableTime);
 }
 ```
+
+##### process.argv
+
+`process.argv` is a global object. Arguments are passed to a Node.js Application, and then accessed with the `process.argv` array.
+
+```bash
+$ [runtime] [script_name] [argument-1 argument-2 argument-3 ... argument-n]
+```
+
+Files are printed out in this order.
+
+- The path pointing to the node executable
+- name of the JS file
+- the first argument passed by the user
+
+```bash
+$ node processargv.js tom jack 43
+0 -> /Users/scott/.nvm/versions/node/v4.8.0/bin/node
+1 -> /Users/scott/javascript/processargv.js
+2 -> tom
+3 -> jack
+4 -> 43
+```
