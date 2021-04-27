@@ -27,3 +27,7 @@
 - Don't add clerverness unless you are absolutely going to need it
 
 ### Functions and side effects
+
+- Functions can be roughly split into two groups. Functions that are called for their `side effects` and those for their `return values`
+
+- `pure` functons are specific kinds that don't relay on side effects and also doesn't create any side effects. It `always produces the same value`.
