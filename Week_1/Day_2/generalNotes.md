@@ -36,6 +36,12 @@
 
 - Avoid generic names
 - Name functions with actions words
+- Use camelCase when writting function names unless otherwise specified
+- Indentation is key
 - be consistent with your conventions
 - observe and adapt any existing naming conventions
 - Functions should ideally not read outter scoped variables, it should be passed in
+
+- Functions should focus on a single task. returning a value or causing a side effects
+
+- _Break your functions into `additional smaller functions` if you find it doing two or more things_
