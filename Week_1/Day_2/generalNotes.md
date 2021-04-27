@@ -31,3 +31,11 @@
 - Functions can be roughly split into two groups. Functions that are called for their `side effects` and those for their `return values`
 
 - `pure` functons are specific kinds that don't relay on side effects and also doesn't create any side effects. It `always produces the same value`.
+
+### Conventions for Functions
+
+- Avoid generic names
+- Name functions with actions words
+- be consistent with your conventions
+- observe and adapt any existing naming conventions
+- Functions should ideally not read outter scoped variables, it should be passed in
