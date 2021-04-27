@@ -35,3 +35,23 @@ $ node processargv.js tom jack 43
 3 -> jack
 4 -> 43
 ```
+
+#### console.assert
+
+`console.assert` can be used to write error messages to the console if the assertion is false. If its true nothing will happen
+
+it takes 4 parameters.
+
+- The assertion (any boolean expression)
+- A list of javascript objects to output
+- A message to print out if the expression fails
+- Javascript objects which to replace substituion strings within the error message
+
+```javascript
+console.assert(false, "the word is %s", "foo");
+// Assertion failed: Assertion failed: the word is foo
+```
+
+Emojis can be using to emphasize the code base and log messages
+
+Javascript does not hoist `initializations` ONLY `declarations`
