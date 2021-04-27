@@ -55,3 +55,13 @@ console.assert(false, "the word is %s", "foo");
 Emojis can be using to emphasize the code base and log messages
 
 Javascript does not hoist `initializations` ONLY `declarations`
+
+#### modulus
+
+! can be used with % to check for true or false based on if a remainder is returned or not
+
+```javascript
+if (!(2 % 4 === 0)) {
+  console.log("true!");
+}
+```
