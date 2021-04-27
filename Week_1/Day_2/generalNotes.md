@@ -36,12 +36,73 @@
 
 - Avoid generic names
 - Name functions with actions words
-- Use camelCase when writting function names unless otherwise specified
-- Indentation is key
-- be consistent with your conventions
+- Use `camelCase` when writting function names unless otherwise specified
+- `Indentation` is key
+- be `consistent` with your conventions
 - observe and adapt any existing naming conventions
 - Functions should ideally not read outter scoped variables, it should be passed in
 
-- Functions should focus on a single task. returning a value or causing a side effects
+- Functions should `focus on a single task`. returning a value or causing a side effects
 
 - _Break your functions into `additional smaller functions` if you find it doing two or more things_
+
+### Day 2 Quiz learning outcomes
+
+#### _List and explain various multi-word naming conventions_
+
+- camelCase
+
+  - Is one of the more popular name conventions. the first letter is lower case and every word after starts with a capital
+
+  ```javascript
+  const camelCase = "thisIsCamelCase";
+  ```
+
+- snake_case
+
+  - each word is seperated by an underscore. No capitals are used. JSON uses it
+
+  ```JSON
+    "first_name": "Brandon",
+    "last_name": "Shemilt",
+  ```
+
+- kebob-case
+  - each word is seperated by a hyphon. No capitals. Found a lot in HTML and CSS
+  ```HTML
+    <p id="personal-greeting">Hello World</p>
+  ```
+
+### _Can explain what type coercion is_
+
+- Type coercion is converting one variable type to another. This is used a lot in javascript when comparing variable types for truthy or falsey values
+
+  - article from [FreeCodeCamp](https://www.freecodecamp.org/news/js-type-coercion-explained-27ba3d9a2839/)
+  - Stack overflow [Answer](http://stackoverflow.com/questions/359494/does-it-matter-which-equals-operator-vs-i-use-in-javascript-comparisons/359509#359509)
+
+  ```javascript
+  if (3 == "3") {
+    console.log("True"); // true
+  }
+
+  let name = "";
+
+  if (!name) {
+    // empty strings are a falsey value so the if statement executes
+    name = "Brandon";
+  }
+  ```
+
+### Understand the difference between "==" and "==="
+
+- javascript will try and force type coercion on an expression using "=="
+
+  ```javascript
+    if(3 == "3") // both values will be converted to the same type
+  ```
+
+- javascript will check for the same variable types when using '==='
+
+  ```javascript
+    if(3 === '3') // will return false, different variable types
+  ```
