@@ -73,7 +73,7 @@
     <p id="personal-greeting">Hello World</p>
   ```
 
-### _Can explain what type coercion is_
+#### _Can explain what type coercion is_
 
 - Type coercion is converting one variable type to another. This is used a lot in javascript when comparing variable types for truthy or falsey values
 
@@ -93,7 +93,7 @@
   }
   ```
 
-### Understand the difference between "==" and "==="
+#### _Understand the difference between "==" and "==="_
 
 - javascript will try and force type coercion on an expression using "=="
 
