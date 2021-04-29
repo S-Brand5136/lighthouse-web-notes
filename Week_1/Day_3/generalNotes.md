@@ -15,8 +15,32 @@
 #### Quiz learning outcome questions
 
 - Can access an element in a nested associative array
+  - to access an element in a nested associative array
 
+  ```javascript
+    const obj = {
+      arrayOne: [1,2,3, [4,5,6]],
+      arrayTwo: [1,2,3,4]
+    }
+    console.log(obj["arrayOne"][3][2]) // -> 6
+
+  ```
 
 - Can list the primitive datatypes in their language
+  - Javascript has 7 primitive types 
+      - Boolean
+      - Number
+      - String
+      - Undefined
+      - Null
+      - Big Int
+      - Symbol
 
 - Can access an element in an associative array
+```javascript
+  const myObj = {
+    one: '1'
+    two: '1'
+  }
+  console.log(myObj.one) // -> "1"
+```
