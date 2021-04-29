@@ -28,3 +28,4 @@
 
   - Here we can see that a `primitive string` is -*not*- the same as an `Object string`
   
+  #### More on this topic [here](https://2ality.com/2011/03/javascript-values-not-everything-is.html)
