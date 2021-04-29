@@ -21,3 +21,4 @@
 
     - examples of higher order functions are .map(), .filter(), .forEach()
 
+  - When logging a function as a callback that has no output it will just output the function information  
