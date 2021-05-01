@@ -12,3 +12,5 @@
 
   - Functional Testing
     - Is testing the complete functionality of some application. In practice it usually means using some sort of tool to test the web page
+
+  
