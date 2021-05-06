@@ -31,10 +31,17 @@
     ```
 
 - There are 9 HTTP request methods, but the 4 big ones are
+
   - GET: used to get data
   - POST: usually used to create some new data
   - PUT: generally used for editing existing data on the server
   - DELETE: used to delete some existing data
+
+- HTTP is a request-response protocol, where the client makes requests and the server sends responses
+- HTTP is a text based protocol, making it easy to read and understand for humans
+- HTTP requests must contain the verb/method (eg: GET) and the Path (eg: /about)
+- HTTP requests aren't always to receive data, but sometimes to save data, like when we submit a form on a website. This is done via a POST instead of a GET
+- Requests and responses both contain key-value based headers (eg: Accept-Language: fr, Content-Type: text/html, etc.)
 
 #### URL
 
