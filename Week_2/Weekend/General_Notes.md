@@ -68,3 +68,15 @@
   ```bash
     $ curl -u username:password URL
   ```
+
+#### Character encoding
+
+- A character encoding provides a key to unlock (ie. crack) the code. It is a set of mappings between the bytes in the computer and the characters in the character set. Without the key, the data looks like garbage.
+
+- As a developer, you should nowadays always choose the UTF-8 character encoding for your content or data. This Unicode encoding is a good choice because you can use a single character encoding to handle any character you are likely to need.
+
+  - UTF-8 is a variable-width character encoding used for electronic communication. Defined by the Unicode Standard, the name is derived from Unicode (or Universal Coded Character Set) Transformation Format – 8-bit.[1] -- Wikipedia
+
+  ##### Fonts in encoding
+
+  - A font is a collection of glyph definitions, ie. definitions of the shapes used to display characters.
