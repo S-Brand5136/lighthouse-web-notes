@@ -19,3 +19,5 @@ This repository contains all of the notes taken by [Brandon Shemilt](https://git
   - [Day_2](/Week_2/Day_2)
   - [Day_3](/Week_2/Day_3)
   - [Day_4](/Week_2/Day_4)
+  - [Day_5](/Week_2/Day_5)
+  - [Weekend](/Week_2/Weekend)
