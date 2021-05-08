@@ -80,3 +80,11 @@
   ##### Fonts in encoding
 
   - A font is a collection of glyph definitions, ie. definitions of the shapes used to display characters.
+
+### DNS
+
+- Root name server (`RNS`) is a name server for the root zone of the domain name system. It directly answers requests for records in the root zone and answers other requests by returning a list of `TLD` server.
+
+- Top-level domain is one of the domains at the highest level in the Domain name system. It comes after the root name. They are installed in the root zone of the name space
+
+- A name server refers to the component of the Domain name system. It translate domain names we know like www.example.com to their corresponding IP address
