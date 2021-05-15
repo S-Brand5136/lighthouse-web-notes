@@ -13,3 +13,7 @@ Each handler can access event object properties:
   - event.target – the deepest element that originated the event.
   - event.currentTarget (=this) – the current element that handles the event (the one that has the handler on it)
   - event.eventPhase – the current phase (capturing=1, target=2, bubbling=3).
+
+Any event handler can stop the event by calling event.stopPropagation(), but that’s not recommended, because we can’t really be sure we won’t need it above, maybe for completely different things.
+
+[Website about even bubbling and capturing]('https://javascript.info/bubbling-and-capturing')
