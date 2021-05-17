@@ -2,7 +2,7 @@
 
 What is Asynchronous Programming ? 
 
-  - Asyncrhonous Programming is when a unit of code is run seperately from the main thrad of the program, and notifes the program when its completed.
+  - Asyncrhonous Programming is when a unit of code is run seperately from the main thread of the program, and notifes the program when its completed.
 
   - Javascript leverages callbacks in order to deal with time consuming tasks.
 
