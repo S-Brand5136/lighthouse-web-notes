@@ -39,6 +39,8 @@ p { property: value !important; }
 - B is next.
 - D is the last one
 
+- [css best practices]('https://code.tutsplus.com/tutorials/30-css-best-practices-for-beginners--net-6741')
+
 ### DOM
 
 - he visual representation of the DOM will be just like your simple HTML. But it’s often not the same…
