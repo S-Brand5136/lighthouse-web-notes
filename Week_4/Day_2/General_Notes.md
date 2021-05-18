@@ -99,3 +99,28 @@ child.addEventListener('click', function(event) {
  // this callback will not fire
 });
 ```
+
+`Delegate Event Listeners`
+
+- Delegate event listeners are a more convenient and performant way to listen for events on a large number of DOM nodes using a single event listener.
+
+```javascript
+var list = document.querySelector('ul');
+
+list.addEventListener('click', function(event) {
+  var target = event.target;
+
+  while (target.tagName !== 'LI') {
+    target = target.parentNode;
+    if (target === list) return;
+  }
+
+  // Do stuff here
+});
+```
+- This is better because we have only the overhead of a single event listener, and we no longer have to worry about attaching a new event listener when an item is added to the list
+
+`Animationiteration`
+ - The animationiteration event will fire every time a currently animating element completes an iteration. This is useful if we want to stop an animation but not midway through.
+
+ 
