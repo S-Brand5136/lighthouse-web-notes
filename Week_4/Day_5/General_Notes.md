@@ -79,4 +79,43 @@ Go back to step two.
 
 Learning Outcomes
 - can identify the difference between linear and quadratic time
-  - Quadratic time is when an algorithms performance is proportional to the squared size of the input data set. O(N2) so O(2(2)) = 4. if it was Linear time where the longest run time is equal to n, the amount of data passed in. it would just be O(n) or O(2) = 2. quadratic time gets worse and worse when you add in larger and larger datasets. While linear time does exactly what the name says. stays linear.
+  - Quadratic time is when an algorithms performance is proportional to the squared size of the input data set. O(N2) so O(2(2)) = 4, or 4 times as long. if it was Linear time where the longest run time is equal to n, the amount of data passed in. it would just be O(n) or O(2) = 2. quadratic time gets worse and worse when you add in larger and larger datasets. While linear time does exactly what the name says. stays linear.
+
+Learning Outcomes
+- can understand how more nested for loops make algorithms more complex
+
+## Big O Notation
+
+- Learning Outcomes:
+  - can understand basic big O notation.
+  - can understand that when we're using Big O, we're talking about large input.
+    - Big O notation only cares about the largest portion of the problem. it doesn't care about the elementary operations
+  - can understand that when we use big O, we drop constants and lower order terms.
+    - again, when creating big O notation only take into consideration the largest portion of the problem. 
+
+***********************
+
+- Some of the more common Big O running times are:
+
+  - Logarithmic O(log n)
+  - Quadratic O(n^2)
+  - Linear O(n)
+  - Constant O(1)
+
+- We only care about arbitrarily large input.
+  - What does the run time of binary search look like when we give it an array of one million items?
+- We drop the non-dominant terms.
+  - When our algorithm had a running time of (n^2+n)/2, it was the n^2 that was hurting us. So we'll just forget about everything else.
+- We drop constant terms.
+  - If you graph (n^3)/2 or (n^3)*2, it has pretty much the same curve as n^3, so let's just get rid of the constant 2.
+
+- Any time we are using Big O notation, we only care about mentioning the highest order term.
+
+- If the number of operations that an algorithm has to do is directly proportional to the logarithm of the size of the input, then that algorithm runs in logarithmic time.
+
+- If the number of operations that an algorithm has to perform is directly proportional to the square of the size of the input, then that algorithm runs in quadratic time.
+
+- When the number of operations an algorithm has to perform grows linearly relative to its input, then that algorithm runs in linear time.
+
+- Big O notation describes how the number of steps in an algorithm scales relative to its input.
+
