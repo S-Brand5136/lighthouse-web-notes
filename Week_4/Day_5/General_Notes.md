@@ -74,3 +74,9 @@ Guess the average of maxmaxm, a, x and minminm, i, n, rounded down so that it is
  - If the guess was too low, set minminm, i, n to be one larger than the guess.
  - If the guess was too high, set maxmaxm, a, x to be one smaller than the guess.
 Go back to step two.
+
+## Quadratic
+
+Learning Outcomes
+- can identify the difference between linear and quadratic time
+  - Quadratic time is when an algorithms performance is proportional to the squared size of the input data set. O(N2) so O(2(2)) = 4. if it was Linear time where the longest run time is equal to n, the amount of data passed in. it would just be O(n) or O(2) = 2. quadratic time gets worse and worse when you add in larger and larger datasets. While linear time does exactly what the name says. stays linear.
