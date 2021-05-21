@@ -63,6 +63,7 @@ console.log(result); // 1
   - can compare time complexity for linear vs binary search
     - Linear search time complexity is n while bineary search is log2n
   - can determine and use worst case scenario for determining complexity
+    - Worst case scenario for binary search is how many times the algoirthm has to go through the data set to find out it doesn't contain what its looking for. this can be found by finding out the log2n = x equation and adding the base amount of elementary operations. for 1000 items its 93 operations.
   - can understand that if the input data for an algorithm doubles in size, and the   number of steps only increases by one, then the algorithm's running time is logarithmic
 
 
