@@ -1,6 +1,6 @@
 ## Notes
 
-### Relationale Databases
+### Relational Databases
 
 - Terms
 
@@ -14,3 +14,21 @@
     - Describes how one or more entities interact with each other. Usually described with a verb.
   - Cardinality
     - The count of instances that are allowed or are necessary between entity relationships. It tells us the min/max we need to connect entitys.
+
+- Structured Query Language (SQL) is a programming language used to interact with relational databases.
+
+- Insert: data into a database
+
+```SQL
+   INSERT INTO db VALUES (1, "Bananas", 4);
+```
+  -
+    - 1: is the unique row ID
+    - "Bananas": is a name column
+    - 4: is a quantity column
+
+- Select: data from a database
+
+```SQL
+  SELECT * FROM db;
+```
