@@ -20,12 +20,17 @@
 
 - Comparison Operators
 
-- < less than
-- '> greater than
-- <= less than or equal to
-- '>= greater than or equal to
-- <> / != not equal
-- = equal
+  - < less than
+  - '> greater than
+  - <= less than or equal to
+  - '>= greater than or equal to
+  - <> / != not equal
+  - = equal
+
+- KEYWORDs
+
+  - GROUP BY allows us to combine the results based on a column so an aggregate can be applied to each group.
+  - HAVING allows us to filter our results based on the result of an aggregate function.
 
 #### To check whether a value is or is not null, use the constructs:
 
