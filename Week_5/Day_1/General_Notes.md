@@ -36,16 +36,56 @@
 
 ## Joining in Postgres
 
-- join to two tables using the JOIN keyward and providing an ON statement afterward. This is an inner join.
+- INNER JOIN
 
-``` postgresql
-  JOIN cohorts ON (cohorts.id=cohort_id);
-```
+  - join to two tables using the JOIN keyward and providing an ON statement afterward. This is an inner join.
 
-- This same query could be written using the INNER keyward to specify the type of join we wanted as well.
+  - If the foreign key is NULL, the row will not be included in the result of an INNER JOIN.
 
-``` postgresql
-  INNER JOIN cohorts ON (cohorts.id=cohort_id);
-```
+  ``` postgresql
+    JOIN cohorts ON (cohorts.id=cohort_id);
+  ```
 
+  - This same query could be written using the INNER keyward to specify the type of join we wanted as well
 
+  - An INNER JOIN will only give us rows where there is a match between the two talbles. Any value that is NULL will not appear in the results.
+
+  ``` postgresql
+    INNER JOIN cohorts ON (cohorts.id=cohort_id);
+  ```
+
+- OUTER JOIN
+
+  - An OUTER JOIN will join the tables similarly to an INNER JOIN but will return all  results for one of the tables, even when the join condition is not met.
+
+  ```postgresql
+    1. FROM students LEFT OUTER JOIN cohorts ON cohorts.id = cohort_id;
+    2. FROM students RIGHT OUTER JOIN cohorts ON cohorts.id = cohort_id;
+    3. FROM students FULL OUTER JOIN cohorts ON cohorts.id = cohort_id;
+  ```
+    1. The first query will return all students because students is to the LEFT of the word JOIN.
+    2. The second query will return all of the cohorts because cohorts is to the RIGHT of the word JOIN.
+    3. The third query will return all rows from both tables, even when there is no match.
+
+***
+
+  - The LEFT OUTER JOIN will return all of the students, even ones without a cohort_id.
+
+  ``` postgresql
+    SELECT students.name as student_name, email, cohorts.name as cohort_name
+    FROM students LEFT OUTER JOIN cohorts ON cohorts.id = cohort_id;
+  ```
+
+  - The RIGHT OUTER JOIN will return all cohorts, even ones without any students enrolled.
+
+  ``` postgresql
+    SELECT students.name as student_name, email, cohorts.name as cohort_name
+    FROM students RIGHT OUTER JOIN cohorts ON cohorts.id = cohort_id;
+  ```
+
+  - The FULL OUTER JOIN will return all cohorts and all students, even when there is no match.
+
+  ``` postgresql
+    SELECT students.name as student_name, email, cohorts.name as cohort_name
+    FROM students FULL OUTER JOIN cohorts ON cohorts.id = cohort_id;
+  ```
