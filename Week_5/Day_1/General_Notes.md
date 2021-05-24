@@ -4,8 +4,9 @@
 
 - Bigint
 - Integer
-- char(n)
-- varChar(n)
+- char(n) - fixed-length
+- varChar(n) - variable length with limit
+- text - variable length without limit
 - Date
 - timestamp
 - interval
