@@ -33,3 +33,19 @@
   expression IS NULL
   expression IS NOT NULL
 ```
+
+## Joining in Postgres
+
+- join to two tables using the JOIN keyward and providing an ON statement afterward. This is an inner join.
+
+``` postgresql
+  JOIN cohorts ON (cohorts.id=cohort_id);
+```
+
+- This same query could be written using the INNER keyward to specify the type of join we wanted as well.
+
+``` postgresql
+  INNER JOIN cohorts ON (cohorts.id=cohort_id);
+```
+
+
