@@ -1,31 +1,11 @@
 # Notes
 
-### Data Definition Language
+### Data Manipulation Language
 
-- The statements use to alter database schema are refered to as Data Definition language (DDL).
+- The SQL commands that let us interact with our data are sometimes referred to as Data Manipulation Language (DML) These include:
 
-  - These can be use to create, mnodify, remove tables indexes and users
+  - SELECT: get data from tables.
+  - INSERT: add rows to a table.
+  - UPDATE: update rows within a table.
+  - DELETE: delete rows from a table.
 
-### Data types
-
-- There are a handful of data types to choose from, some include
-  - SMALLINT
-  - INTEGER
-  - BIGINT
-  - DECIMAL
-  - DATE
-  - NUMERIC
-  - REAL
-  - DOUBLE
-  - SMALLSERIAL
-  - SERIAL
-  - BIGSERIAL
-  - TIMESTAMP
-
-### Table altering
-
-- The basic syntax for table altering is such
-
-``` postgresql
-    ALTER TABLE table_name action;
-```
