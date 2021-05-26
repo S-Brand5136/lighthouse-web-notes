@@ -46,3 +46,22 @@ Basic syntax
 ```
 
 - Always include a WHERE clause when deleting.
+
+### Update
+
+- The SQL UPDATE Query is used to modify the existing records in a table. You can use the WHERE clause with the UPDATE query to update the selected rows, otherwise all the rows would be affected.
+
+Basic Syntax
+``` postgresql
+  UPDATE table_name
+  SET column1 = value1, column2 = value2 etc..
+  WHERE [condition];
+```
+
+- If you want to modify all the values in a column in a table you do not need dto use the WHERE clause as the UPDATE query would be enough
+
+``` postgresql
+    UPDATE table_name
+    SET column1 = value1, column2 = value2 etc..
+```
+
