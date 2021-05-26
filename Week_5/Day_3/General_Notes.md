@@ -65,3 +65,7 @@ Basic Syntax
     SET column1 = value1, column2 = value2 etc..
 ```
 
+
+- **The UPDATE and DELETE are the most dangerous queries because they change or remove data. This means we need to be very careful when using either of them.**
+
+- **Never write an UPDATE or DELETE query without a WHERE clause.**
