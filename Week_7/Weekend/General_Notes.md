@@ -40,3 +40,9 @@
   - Eliminate duplication
 
 - Its a great technique for new developers beacuse it encourages the understanding of requirements before any code is written
+
+Summary
+
+Testing is essential, but it comes at a cost, which means that it requires investment. Testing our code is not optional as we have learned. A lot of the time spent on building a project is used to test changes manually. If we don't like the repetitive, and inconsistent methods of manual testing that we have been using, then we can invest some time to automate the same types of tests.
+
+Writing tests should save us time in the long run, and test consistency gives us a higher degree of confidence.
