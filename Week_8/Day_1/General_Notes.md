@@ -13,3 +13,15 @@
   - Initialize the component that we would like to test
   - Trigger the change that executes the unit
   - Verify that the unit produced the expected result.
+
+- The Three Phases of Testing
+
+  - Setup
+  - Change
+  - Verify
+
+- Descrive, It, test
+
+  - If we want to group a series of tests we use Describe()
+
+  - test() and it() are both the same function. it() is just an alias to test(). Their purpose is to declare tests
