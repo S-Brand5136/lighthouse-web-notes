@@ -17,3 +17,5 @@
 - Avoid loops when writting tests with Cypress
 
 - After test functions finish, Cypres executes the commands that were queued using cy.
+
+- All cypress DOM based commands automatically wait for their elements to eist in the DOM. We **never** need to write .should('exist') after a dom based command
