@@ -24,7 +24,7 @@
 
 ## Comments
 
-```ruby
+```rb
   # This is a comment
 
   =begin
