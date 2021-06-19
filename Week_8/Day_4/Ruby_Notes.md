@@ -4,6 +4,8 @@
 
 - By convention use snake_case for variable names
 
+- Constsants in ruby are defined by a Capital letter at the start of the variable name
+
 ```bash
   $ ruby example.rb
 ```
